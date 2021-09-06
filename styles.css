@@ -1,0 +1,169 @@
+body{
+    margin: 0%;
+    font-family:'Montserrat'; 
+    
+}
+p,h2{
+    color:#424355;
+}
+h2{
+    font-weight: 200px;
+    font-size: medium;
+}
+p{
+    font-size:small;
+}
+
+.topbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#c95959;
+    color: white;
+    margin: 0%;
+    z-index: 1;
+}
+.arrow{
+    display: inline; 
+    margin-left: 30px;
+}
+.topbarheading{
+    padding-left: 20px;
+    font-size: small;
+    display: inline;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2px;
+}
+.container{
+    height: 180px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: 135px;
+}
+
+.visual-aid{
+    width: 130px;
+    height: 85px;
+    border: 1.5px solid #53535e81;
+    /*background-color: #ffe7bc;*/
+    background-color: #f8f4f4;
+    border-radius:5px;
+    display: flex;
+    align-items: inherit;
+    justify-content: left;
+}
+
+img{
+    margin-left: 6px;
+    margin-right: 3px;
+    width :85px;
+    height : 82px;
+    background-color: white;
+}
+
+#imglast{
+    height: 70px;
+    width: 57px;
+    margin-top: 7px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+
+.checkbox-container{
+    justify-content: right;
+    margin-top: 10px;
+    margin-left: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input{
+    margin:0%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0px;
+  }
+
+  .checkmark {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #f8f4f4;
+    border: 1px solid #53535e50;
+    border-radius: 2px;
+  }
+
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #e2e0e0;
+  }
+
+
+  .checkbox-container input:checked ~ .checkmark {
+    background-color:#c95959;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkbox-container .checkmark:after {
+    left: 8px;
+    top: 5px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+.query{
+    display: grid;
+    font-size: 12px;
+}
+
+.done-button{
+    width:90%;
+    height: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    color: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    border: solid 1px #c95959;
+    background-color: #c95959;
+    font-weight: bolder;
+}
+
+.desc{
+    margin:5%;
+}
+
+
