@@ -1,46 +1,55 @@
-body{
+body {
     margin: 0%;
-    font-family:'Montserrat'; 
-    
-}
-p,h2,.query{
-    color:#424355ea;
-}
-h2{
-    font-size: medium;
-}
-p,.topbarheading{
-    font-size:small;
+    font-family: 'Montserrat';
+
 }
 
-.topbar{
+p,
+h2,
+.query {
+    color: #424355ea;
+}
+
+h2 {
+    font-size: medium;
+}
+
+p,
+.topbarheading {
+    font-size: small;
+}
+
+.topbar {
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     width: 100%;
     height: 3.5em;
-    background-color:#c95959;
+    background-color: #c95959;
     color: white;
     margin: 0%;
     z-index: 1;
 }
-.arrow{
+
+.arrow {
     margin-left: 1.5em;
 }
-.topbarheading{
+
+.topbarheading {
     padding-left: 1.1em;
     display: inline;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 0.2em;
 }
-.container{
+
+.container {
     /*flex: 0 0 45%;*/
     height: 12em;
     margin: 0.7em;
@@ -48,76 +57,76 @@ p,.topbarheading{
     flex-basis: 8.1em;
 }
 
-.visual-aid{
+.visual-aid {
     width: 8em;
     height: 5.2em;
     border: 1.5px solid #53535e81;
     /*background-color: #ffe7bc;*/
     background-color: #f8f4f4;
-    border-radius:5px;
+    border-radius: 5px;
     display: flex;
     align-items: inherit;
     justify-content: left;
 }
 
-img{
+img {
     margin: 0 0.3em 0 0.32em;
-    width :5.1em;
-    height : 4.95em;
+    width: 5.1em;
+    height: 4.95em;
     background-color: white;
 }
 
-#imglast{
+#imglast {
     height: 4.2em;
     width: 3.58em;
     margin: 0.4em 0.45em 0 1.7em;
 }
 
-.checkbox-container{
+.checkbox-container {
     justify-content: right;
     margin: 0.5em 0 0 0.2em;
     cursor: pointer;
     overflow: hidden;
 }
 
-.checkbox-container input{
-    margin:0%;
+.checkbox-container input {
+    margin: 0%;
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0px;
     width: 0px;
-  }
+}
 
-  .checkmark {
+.checkmark {
     position: absolute;
     height: 1.28em;
     width: 1.28em;
     background-color: #f8f4f4;
     border: 1px solid #53535e50;
     border-radius: 2px;
-  }
+}
 
-  .checkbox-container:hover input ~ .checkmark {
+.checkbox-container:hover input~.checkmark {
     background-color: #e2e0e0;
-  }
+}
 
 
-  .checkbox-container input:checked ~ .checkmark {
-    background-color:#c95959;
-  }
+.checkbox-container input:checked~.checkmark {
+    background-color: #c95959;
+}
 
-  .checkmark:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
+}
 
-  .checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
     display: block;
-  }
+}
 
-  .checkbox-container .checkmark:after {
+.checkbox-container .checkmark:after {
     left: 0.5em;
     top: 0.2em;
     width: 0.24em;
@@ -127,16 +136,16 @@ img{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
 
 
-.query{
+.query {
     font-size: 12px;
 }
 
-.done-button{
-    width:90%;
+.done-button {
+    width: 90%;
     height: 3.2em;
     margin: 0 5% 1.3em;
     color: ivory;
@@ -147,22 +156,27 @@ img{
     font-size: small;
 }
 
-.desc{
-    margin:5%;
+.desc {
+    margin: 5%;
 }
 
 
-@media only screen and (min-width:467px){
-    .flex-container{
+@media only screen and (min-width:467px) {
+    .flex-container {
         align-items: flex-start;
         justify-content: space-evenly;
     }
-    .topbar{
+
+    .topbar {
         height: 10vh;
     }
-    p,h2, .topbarheading{
+
+    p,
+    h2,
+    .topbarheading {
         font-size: 2vh;
     }
+
     .container {
         flex-basis: 30%;
         text-align: center;
@@ -173,39 +187,37 @@ img{
         margin-bottom: 5%;
     }
 
-    .container >p{
+    .container>p {
         font-size: 1.7vh;
         padding: 5%;
         margin: 0%;
     }
 
-    .visual-aid{
+    .visual-aid {
         align-self: center;
         width: 90%;
-        height:100%;
+        height: 100%;
     }
 
-    .visual-aid >img{
-        width:34%;
-        height:auto;
+    .visual-aid>img {
+        width: 34%;
+        height: auto;
         margin: 20px 15% 3% 30%;
-        
+
     }
 
-    #imglast{
-        width:26%;
+    #imglast {
+        width: 26%;
         height: auto;
         margin: 20px 18% 3% 31%;
     }
 
-    .checkmark{
+    .checkmark {
         margin-top: 2%;
     }
 
-    .done-button{
+    .done-button {
         height: 6vh;
+        font-size: 2vh;
     }
 }
-
-
-
