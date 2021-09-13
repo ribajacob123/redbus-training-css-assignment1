@@ -3,14 +3,13 @@ body{
     font-family:'Montserrat'; 
     
 }
-p,h2{
-    color:#424355;
+p,h2,.query{
+    color:#424355ea;
 }
 h2{
-    font-weight: 200px;
     font-size: medium;
 }
-p{
+p,.topbarheading{
     font-size:small;
 }
 
@@ -20,18 +19,17 @@ p{
     position: sticky;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 3.5em;
     background-color:#c95959;
     color: white;
     margin: 0%;
     z-index: 1;
 }
 .arrow{
-    margin-left: 30px;
+    margin-left: 1.5em;
 }
 .topbarheading{
-    padding-left: 20px;
-    font-size: small;
+    padding-left: 1.1em;
     display: inline;
 }
 
@@ -40,18 +38,19 @@ p{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 2px;
+    margin: 0.2em;
 }
 .container{
-    height: 180px;
-    margin: 10px;
+    /*flex: 0 0 45%;*/
+    height: 12em;
+    margin: 0.7em;
     text-align: center;
-    flex-basis: 135px;
+    flex-basis: 8.1em;
 }
 
 .visual-aid{
-    width: 130px;
-    height: 85px;
+    width: 8em;
+    height: 5.2em;
     border: 1.5px solid #53535e81;
     /*background-color: #ffe7bc;*/
     background-color: #f8f4f4;
@@ -62,32 +61,23 @@ p{
 }
 
 img{
-    margin-left: 6px;
-    margin-right: 3px;
-    width :85px;
-    height : 82px;
+    margin: 0 0.3em 0 0.32em;
+    width :5.1em;
+    height : 4.95em;
     background-color: white;
 }
 
 #imglast{
-    height: 70px;
-    width: 57px;
-    margin-top: 7px;
-    margin-left: 30px;
-    margin-right: 10px;
+    height: 4.2em;
+    width: 3.58em;
+    margin: 0.4em 0.45em 0 1.7em;
 }
-
 
 .checkbox-container{
     justify-content: right;
-    margin-top: 10px;
-    margin-left: 2px;
+    margin: 0.5em 0 0 0.2em;
     cursor: pointer;
     overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .checkbox-container input{
@@ -101,8 +91,8 @@ img{
 
   .checkmark {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 1.28em;
+    width: 1.28em;
     background-color: #f8f4f4;
     border: 1px solid #53535e50;
     border-radius: 2px;
@@ -128,10 +118,10 @@ img{
   }
 
   .checkbox-container .checkmark:after {
-    left: 8px;
-    top: 5px;
-    width: 3px;
-    height: 7px;
+    left: 0.5em;
+    top: 0.2em;
+    width: 0.24em;
+    height: 0.52em;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -141,27 +131,81 @@ img{
 
 
 
-
 .query{
     font-size: 12px;
 }
 
 .done-button{
     width:90%;
-    height: 50px;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    height: 3.2em;
+    margin: 0 5% 1.3em;
     color: ivory;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
     border: solid 1px #c95959;
     background-color: #c95959;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: small;
 }
 
 .desc{
     margin:5%;
 }
+
+
+@media only screen and (min-width:467px){
+    .flex-container{
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .topbar{
+        height: 10vh;
+    }
+    p,h2, .topbarheading{
+        font-size: 2vh;
+    }
+    .container {
+        flex-basis: 30%;
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 45%;
+        margin-bottom: 5%;
+    }
+
+    .container >p{
+        font-size: 1.7vh;
+        padding: 5%;
+        margin: 0%;
+    }
+
+    .visual-aid{
+        align-self: center;
+        width: 90%;
+        height:100%;
+    }
+
+    .visual-aid >img{
+        width:34%;
+        height:auto;
+        margin: 20px 15% 3% 30%;
+        
+    }
+
+    #imglast{
+        width:26%;
+        height: auto;
+        margin: 20px 18% 3% 31%;
+    }
+
+    .checkmark{
+        margin-top: 2%;
+    }
+
+    .done-button{
+        height: 6vh;
+    }
+}
+
 
 
