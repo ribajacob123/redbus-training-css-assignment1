@@ -51,3 +51,20 @@ function ckChange(cb) {
         imglast.style.opacity = 1;
     }
 }
+
+function validateForm(form){
+    var checkboxes = document.getElementsByName("ck");
+    var last  = document.getElementById("cklast");
+
+    var flag = 0
+    for(var i =0;i<checkboxes.length;i++){
+        if(checkboxes[i].checked == true){
+            flag = 1
+        }
+    }
+    if(flag ==1 || last.checked == true);
+    else{
+        alert("Please select the required checkboxes")
+        return false;
+    }
+}
