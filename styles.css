@@ -162,23 +162,25 @@ img {
 
 
 @media only screen and (min-width:467px) {
+    body{
+        font-size: 16px;
+    }
     .flex-container {
         align-items: flex-start;
         justify-content: space-evenly;
     }
 
     .topbar {
-        height: 10vh;
+        height: 4rem;
     }
 
     p,
     h2,
     .topbarheading {
-        font-size: 2vh;
+        font-size: 1rem;
     }
 
     .container {
-        flex-basis: 30%;
         text-align: center;
         height: auto;
         display: flex;
@@ -188,7 +190,7 @@ img {
     }
 
     .container>p {
-        font-size: 1.7vh;
+        font-size: 0.9rem;
         padding: 5%;
         margin: 0%;
     }
@@ -213,11 +215,11 @@ img {
     }
 
     .checkmark {
-        margin-top: 2%;
+        margin-top: 0.5rem;
     }
 
     .done-button {
-        height: 6vh;
-        font-size: 2vh;
+        height: 3rem;
+        font-size: 1rem;
     }
 }
